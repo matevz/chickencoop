@@ -8,4 +8,3 @@ def init_manual_door_button(callback):
 	GPIO.setmode(GPIO.BCM)
 	GPIO.setup(MANUAL_DOOR_BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 	GPIO.add_event_detect(MANUAL_DOOR_BUTTON_PIN, GPIO.RISING, callback=callback)
-

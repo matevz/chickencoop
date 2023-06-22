@@ -1,23 +1,22 @@
-import board
 import json
 import os
 from dataclasses import dataclass
 from status import Status
 
 # DHT22 input.
-DHT22_PIN = board.D4
+DHT22_PIN = 4
 
 # 12V master switch.
-MASTER_SWITCH_PIN = board.D17
+MASTER_SWITCH_PIN = 17
 
 # 12V Up/Down actuator for door.
-DOOR_SWITCH_PIN = board.D27
+DOOR_SWITCH_PIN = 27
 
 # 12V On/Off IR illuminator.
-LIGHT_SWITCH_PIN = board.D22
+LIGHT_SWITCH_PIN = 22
 
 # 5V input for opening/closing the door with button on site.
-MANUAL_DOOR_BUTTON_PIN = board.D5
+MANUAL_DOOR_BUTTON_PIN = 5
 
 CFG_DIR="~/.config/chickencoop"
 CFG_NAME="cfg.json"

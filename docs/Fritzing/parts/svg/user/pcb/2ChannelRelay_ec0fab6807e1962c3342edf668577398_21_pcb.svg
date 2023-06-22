@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<svg xmlns="http://www.w3.org/2000/svg" height="75.5mm" x="0px" xml:space="preserve" y="0px" width="55mm" xmlns:xml="http://www.w3.org/XML/1998/namespace" version="1.1" id="Layer_1" enable-background="new 0 0 39 51"  gorn="0" viewBox="0 0 42.058824 100.01299">
+    <metadata id="metadata36" >
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <cc:Work rdf:about="" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+                <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <defs id="defs34" />
+    <desc id="desc3" >
+        <referenceFile >2-ChannelRelay-5v10a-pcb.svg</referenceFile>
+    </desc>
+    <g transform="translate(0.64830542,53.118921)" >
+        <g >
+            <g id="silkscreen"  gorn="0.3.0.0">
+                <line stroke-width="0.75" fill="none" id="line6"  y1="0.72000003" y2="36.779999" stroke="#ffffff" x1="0.72000003" gorn="0.3.0.0.0" x2="0.72000003"/>
+                <line stroke-width="0.75" fill="none" id="line8"  y1="36.779999" y2="36.779999" stroke="#ffffff" x1="0.72000003" gorn="0.3.0.0.1" x2="50.279999"/>
+                <line stroke-width="0.75" fill="none" id="line10"  y1="36.779999" y2="0.72000003" stroke="#ffffff" x1="50.279999" gorn="0.3.0.0.2" x2="50.279999"/>
+                <line stroke-width="0.75" fill="none" id="line12"  y1="0.72000003" y2="0.72000003" stroke="#ffffff" x1="0.72000003" gorn="0.3.0.0.3" x2="50.279999"/>
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(1.2973667,0,0,1.4123342,-20.142889,64.337388)" >
+        <g >
+            <g id="copper0"  gorn="0.4.0.0">
+                <g id="copper1"  gorn="0.4.0.0.0">
+                    <circle stroke-width="0.8510446" fill="none" id="connector17pin"  cx="9.6335526" stroke="#ffbf00" cy="-36.588234" r="1.5" gorn="0.4.0.0.0.0"/>
+                    <circle stroke-width="0.8510446" fill="none" id="connector9pin"  cx="9.6335526" stroke="#ffbf00" cy="-31.588236" r="1.5" gorn="0.4.0.0.0.1"/>
+                    <circle stroke-width="0.8510446" fill="none" id="connector13pin"  cx="9.6335526" stroke="#ffbf00" cy="-26.588236" r="1.5" gorn="0.4.0.0.0.2"/>
+                    <circle stroke-width="0.8510446" fill="none" id="connector16pin"  cx="9.6335526" stroke="#ffbf00" cy="-21.588236" r="1.5" gorn="0.4.0.0.0.3"/>
+                    <circle stroke-width="0.8510446" fill="none" id="connector8pin"  cx="9.6335526" stroke="#ffbf00" cy="-16.588236" r="1.5" gorn="0.4.0.0.0.4"/>
+                    <circle stroke-width="0.8510446" fill="none" id="connector12pin"  cx="9.6335526" stroke="#ffbf00" cy="-11.588236" r="1.5" gorn="0.4.0.0.0.5"/>
+                    <circle stroke-width="0.5910033" fill="none" id="connector0pad"  cx="55.991379" stroke="#ffbf00" cy="-33.626762" r="0.89999998" gorn="0.4.0.0.0.6"/>
+                    <circle stroke-width="0.5910033" fill="none" id="connector5pad"  cx="55.991379" stroke="#ffbf00" cy="-31.126762" r="0.89999998" gorn="0.4.0.0.0.7"/>
+                    <circle stroke-width="0.5910033" fill="none" id="connector4pad"  cx="55.991379" stroke="#ffbf00" cy="-28.626762" r="0.89999998" gorn="0.4.0.0.0.8"/>
+                    <circle stroke-width="0.5910033" fill="none" id="connector3pad"  cx="55.991379" stroke="#ffbf00" cy="-26.126762" r="0.89999998" gorn="0.4.0.0.0.9"/>
+                    <g transform="matrix(-0.0269456,0.9996369,-0.9996369,-0.02694559,0,0)" >
+                        <g >
+                            <circle stroke-width="0.5910033" fill="none" id="connector19pin"  cx="-42.733974" stroke="#ffbf00" cy="-45.357079" r="0.89999998" gorn="0.4.0.0.0.10.0.0"/>
+                        </g>
+                    </g>
+                    <g transform="matrix(-0.0269456,0.9996369,-0.9996369,-0.02694559,0,0)" >
+                        <g >
+                            <circle stroke-width="0.5910033" fill="none" id="connector18pin"  cx="-42.733974" stroke="#ffbf00" cy="-42.857079" r="0.89999998" gorn="0.4.0.0.0.11.0.0"/>
+                        </g>
+                    </g>
+                    <circle stroke-width="0.8510446" fill="none" id="connector15pin"  cx="9.7483988" stroke="#ffbf00" cy="-6.8128128" r="1.5" gorn="0.4.0.0.0.12"/>
+                    <circle stroke-width="0.8510446" fill="none" id="connector7pin"  cx="9.7483988" stroke="#ffbf00" cy="-1.812814" r="1.5" gorn="0.4.0.0.0.13"/>
+                    <circle stroke-width="0.8510446" fill="none" id="connector11pin"  cx="9.7483988" stroke="#ffbf00" cy="3.1871865" r="1.5" gorn="0.4.0.0.0.14"/>
+                    <ellipse rx="0.89999992" ry="0.89999998" stroke-width="0.5910033" fill="none" id="connector2pad"  cx="55.949444" stroke="#ffbf00" cy="-23.42761" gorn="0.4.0.0.0.15"/>
+                    <ellipse rx="0.89999992" ry="0.89999998" stroke-width="0.5910033" fill="none" id="connector1pad"  cx="55.949444" stroke="#ffbf00" cy="-20.92761" gorn="0.4.0.0.0.16"/>
+                    <circle stroke-width="0.8510446" fill="none" id="connector14pin"  cx="9.9860678" stroke="#ffbf00" r="1.5" cy="7.560174" gorn="0.4.0.0.0.17"/>
+                    <circle stroke-width="0.8510446" fill="none" id="connector6pin"  cx="9.9860678" stroke="#ffbf00" r="1.5" cy="12.560174" gorn="0.4.0.0.0.18"/>
+                    <circle stroke-width="0.8510446" fill="none" id="connector10pin"  cx="9.9860678" stroke="#ffbf00" r="1.5" cy="17.560175" gorn="0.4.0.0.0.19"/>
+                </g>
+            </g>
+        </g>
+    </g>
+    <g transform="translate(0,49.012989)" >
+        <g >
+            <g id="keepout"  gorn="0.5.0.0"/>
+        </g>
+    </g>
+    <g transform="translate(0,49.012989)" >
+        <g >
+            <g id="soldermask"  gorn="0.6.0.0"/>
+        </g>
+    </g>
+    <g transform="translate(0,49.012989)" >
+        <g >
+            <g id="outline"  gorn="0.7.0.0"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module fritzingVersion="0.9.6b.." icon="Search.png" search="text">
+    <title>Search</title>
+    <instances>
+        <instance moduleIdRef="arduino_mega_sensor_shield_v20_bd1049fc611e766457ee7b1378778293_10" modelIndex="85413928" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/arduino_mega_sensor_shield_v20.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SPARKCORE_v1_fix" modelIndex="85413929" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/SPARKCORE_v1_fix.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-3p-125v" modelIndex="85413930" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-3p-125v_42.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkfunIMUBreakoutMPU-9250" modelIndex="85413931" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Sparkfun_IMU_Breakout_MPU-9250.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LM239_383e0df5e7311423c672919352eb812d_8" modelIndex="85413932" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/LM239_IC_DIP_14_300mil.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_Conductivity Circuit" modelIndex="85413933" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/atlas-sientific_Conductivity Circuit.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Camdenboss_CTB0158-5_5_08mm_pitch_90deg_terminals" modelIndex="85413934" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Camdenboss_CTB0158-5_5_08mm_pitch_90deg_terminals.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ESP8266_module_antenna" modelIndex="85413935" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/ESP8266_module.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Camdenboss_CTB0158-11_5_08mm_pitch_90deg_terminals" modelIndex="85413936" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Camdenboss_CTB0158-11_5_08mm_pitch_90deg_terminals.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Displays-LCD-16X2-NOSILK" modelIndex="85413937" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/sparkfun-displays-lcd-16x2-nosilk.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="FTDI Basic-v13_lily" modelIndex="85413938" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/FTDI Basic-v13_lily.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="arduino_Yun(rev1)_v1" modelIndex="85413939" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/arduino_Yun(rev1)_v1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="TalonSRX_1" modelIndex="85413940" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/TalonSRX_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="multimeter_v_dc_1" modelIndex="85413941" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/multimeter_v_dc_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-5p-125h" modelIndex="85413942" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-5p-125h_26.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Linit_One_Board_94e356fb7a34b9386a6476cf67d34c6a_12" modelIndex="85413943" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Seeedstudio_LinkIt_ONE.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_D.O. Circuit" modelIndex="85413944" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/atlas-sientific_D.O. Circuit.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="23LCV1024_24357530b44412a899aa27521bf5766d_1" modelIndex="85413945" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/23LCV1024_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="P1000K_laydown" modelIndex="85413946" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Rectifier Diode 10A.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="888H-1CC-F-C_E" modelIndex="85413947" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/888H-1CC-F-C_E.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Dagu_DGServo_9g_header_connector_female" modelIndex="85413948" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Dagu DGServo 9g header connector (female).fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-FKIT-RIBBON_CONNECTOR--2MM_L_REV2" modelIndex="85413949" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/sparkfun-electromechanical-fkit-ribbon_connector--2mm_l_rev2.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-7p-125h" modelIndex="85413950" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-7p-125h_10.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="chipkit_WF32" modelIndex="85413951" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/chipkit_WF32.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4081_4_x_2_input_AND_gate_single" modelIndex="85413952" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/4081_4_x_2_input_AND_gate_single.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad-Light Sensor-v13" modelIndex="85413953" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/LilyPad-Light Sensor-v13.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="JST-VHR-3N" modelIndex="85413954" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/JST-VHR-3N.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Arduino Lilypad" modelIndex="85413955" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Mainboard-v18.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="YumoE6B2_1" modelIndex="85413956" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/YumoE6B2_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="pololu0002_a988" modelIndex="85413957" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/pololu0002_a988.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="TE_RELAY" modelIndex="85413958" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/TE_RELAY.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="CD4048B_64153d6304720c78495cf70ab817988e_1" modelIndex="85413959" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/CD4048B_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53261-0419_smd-4p-h" modelIndex="85413960" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53261-0419_smd-4p-h_32.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Camdenboss_CTB0158-7_5_08mm_pitch_90deg_terminals" modelIndex="85413961" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Camdenboss_CTB0158-7_5_08mm_pitch_90deg_terminals.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="prefix0000_642e08dceb3d1de4c31ea2bcfb635c6f_1" modelIndex="85413962" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/DFRobot-PH-sensor.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="grove_light_sensor" modelIndex="85413963" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/seeed_grove_light_sensor.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="RFduinoSMD_fix" modelIndex="85413964" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/RFduinoSMD_fix.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="grove_infrared_emitter" modelIndex="85413965" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/seeed_grove_infrared_emitter.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="BreadboardLogoTextModuleID" modelIndex="85413966" path=":/resources/parts/core/breadboardlogotext.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="grove_3axis_digital_accelerometer_16g" modelIndex="85413967" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/seeed_grove_3axis_digital_accelerometer_16g.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53261-0819_smd-8p-h" modelIndex="85413968" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53261-0819_smd-8p-h_4.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53398-0671_smd-6p-v" modelIndex="85413969" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53398-0671_smd-6p-v_8.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53398-0571_smd-5p-v" modelIndex="85413970" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53398-0571_smd-5p-v_8.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Camdenboss_CTB0158-3_5_08mm_pitch_90deg_terminals" modelIndex="85413971" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Camdenboss_CTB0158-3_5_08mm_pitch_90deg_terminals.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-FKIT-RIBBON_CONNECTOR--2MM_R_REV2" modelIndex="85413972" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/sparkfun-electromechanical-fkit-ribbon_connector--2mm_r_rev2.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="FT230XQ_df1159ec8af0eb336d7fbe6068d3aed4_2" modelIndex="85413973" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/FT230XQ_2.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="seeeduino_v3" modelIndex="85413974" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/seeed_seeeduino_v3.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_ENV-32X" modelIndex="85413975" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/atlas-sientific_ENV-32X.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="multimeter_v_ac_1" modelIndex="85413976" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/multimeter_v_ac_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="tilt-switch-sw200d_1b7c85bbf48b8a3270358749bb53b4c6_1" modelIndex="85413977" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/tilt-switch-sw200d.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="cellular shield-v12" modelIndex="85413978" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/cellular shield-v12.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="DENSO 174917 ECU socket 48pin_c9a68151309697733439e70b6fbd83fd_1" modelIndex="85413979" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/174917_DENSO-ECU-socket_48pin-040-070.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="microsdmodule" modelIndex="85413980" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/microsdmodule.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Displays-LCD-16X2-8X2" modelIndex="85413981" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/sparkfun-displays-lcd-16x2-8x2.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="MPX4250AP_60bfc397c54bae166e67461339be2ca8_4" modelIndex="85413982" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/MPX4250AP pressure sensor.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="NRF24L01+_breakout" modelIndex="85413983" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/NRF24L01+_breakout.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Taiway-100-SP-X-T1-X-X-B1-M1_SPDT_miniature_toggle_switch" modelIndex="85413984" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Taiway-100-SP-X-T1-X-X-B1-M1_SPDT_miniature_toggle_switch.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="grove_temperature_sensor" modelIndex="85413985" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/seeed_grove_temperature_sensor.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Dagu_DGServo_9g_Pan_and_tilt" modelIndex="85413986" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Dagu DGServo 9g (Pan and tilt).fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="xbee_usb_mini_adapter_85ee5879a90d0ab9113e0656c4e15a9c_6" modelIndex="85413987" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/xbee_usb_mini_adapter.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="NRF24L01_fix" modelIndex="85413988" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/NRF24L01_fix.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SN74LVC2G14DBVR_fdd88c7268b73ebcc4ab7e9b12fb8353_2" modelIndex="85413989" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/SN74LVC2G14DBVR_2.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="HC-05-male_fix" modelIndex="85413990" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/HC-05-male_fix.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="74HC139N_fa229dffcda5c58d9e589070e2239d6d_1" modelIndex="85413991" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/74HC139N_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="multimeter_straight-black-probe_1" modelIndex="85413992" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/multimeter_straight-black-probe_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Displays-LCD-16X2-NOHOLES" modelIndex="85413993" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/sparkfun-displays-lcd-16x2-noholes.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="fc-51_85d98481ce3be6f2e9b641181c0f798b_2" modelIndex="85413994" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/fc-51-IR-Sensor_On.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Tricolor-LED v16" modelIndex="85413995" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Tricolor-LED v16.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="DS2Y5DC5V" modelIndex="85413996" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/DS2Y-5-DC5V.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4011_4_x_2_input_NAND_gate_single" modelIndex="85413997" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/4011_4_x_2_input_NAND_gate_single.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Dagu_DGServo_9g_PCB_mounting_holes" modelIndex="85413998" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Dagu DGServo 9g PCB mounting holes.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_FLO-30 Circuit" modelIndex="85413999" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/atlas-sientific_FLO-30 Circuit.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="multimeter_c_dc_1" modelIndex="85414000" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/multimeter_c_dc_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Camdenboss_CTB0158-12_5_08mm_pitch_90deg_terminals" modelIndex="85414001" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Camdenboss_CTB0158-12_5_08mm_pitch_90deg_terminals.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Taiway-100-SP-X-T1-X-X-B1-M1_SPDT_miniature_toggle_switch_actuator" modelIndex="85414002" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Taiway-100-SP-X-T1-X-X-B1-M1_SPDT_miniature_toggle_switch_actuator.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Displays-LCD-16X2-8X2-KIT" modelIndex="85414003" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/sparkfun-displays-lcd-16x2-8x2-kit.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad-Temp-v12" modelIndex="85414004" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/LilyPad-Temp-v12.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="888H-1CC-F-C E_2c587b2bac849b62c1c8ed5abf5ea53c_11" modelIndex="85414005" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/888H-1CC-F-C E_2c587b2bac849b62c1c8ed5abf5ea53c_11.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="IchigoJamT" modelIndex="85414006" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/IchigoJamT.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="xbee_pro_rf_module_47f5ea101911229f01cccb5b78c24973_20" modelIndex="85414007" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/xbee_pro_rf_module.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="FINALWEIO_ff7656622014dbb325626f2fefde52eb_1" modelIndex="85414008" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/WeIO.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="daf5c6f3ee7e6da72522d1ea59fca803_65" modelIndex="85414009" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/CAR_RELE_NVF4-2.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Silkscreen0LogoTextModuleID" modelIndex="85414010" path=":/resources/parts/core/silkscreen0logotext.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="A4950_f96ca75d4706a24394f9603716d558ed_37" modelIndex="85414011" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/A4950_37.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Raspberry_Pi_Zero_rev1.1" modelIndex="85414012" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Raspberry_Pi_Zero_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="arch_v1.1" modelIndex="85414013" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/seeed_arch_v1.1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Trackballer-v12" modelIndex="85414014" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Trackballer-v12.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="chipkit_MX4" modelIndex="85414015" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/chipkit_MX4.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53398-0871_smd-8p-v" modelIndex="85414016" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53398-0871_smd-8p-v_1.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="P1000K_standup" modelIndex="85414017" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Rectifier Diode 10A_standup_on_PCB.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="arch_pro_v1" modelIndex="85414018" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/seeed_arch_pro_v1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="APEM-PT65-303_Rotary_coded_hexadecimal_switch" modelIndex="85414019" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/APEM-PT65-303_Rotary_coded_hexadecimal_switch.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="2d505f861194750183f944ba86c13b44_28" modelIndex="85414020" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/tsop312.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Taiway-100-SP-X-T1-X-X-B1-M2_SPDT_miniature_toggle_switch" modelIndex="85414021" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Taiway-100-SP-X-T1-X-X-B1-M2_SPDT_miniature_toggle_switch.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="RioRand_LM2596_94ce9810d0922bc731e2f315085d46ab_1" modelIndex="85414022" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/RioRand_LM2596_94ce9810d0922bc731e2f315085d46ab_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53261-0719_smd-7p-h" modelIndex="85414023" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53261-0719_smd-7p-h_8.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53398-0371_smd-3p-v" modelIndex="85414024" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53398-0371_smd-3p-v_10.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SchematicLogoTextModuleID" modelIndex="85414025" path=":/resources/parts/core/schematiclogotext.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4d1eb8f243c1aba7afe676122ea516cc_2" modelIndex="85414026" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Textile Pushbutton.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="fc-51_85d98481ce3be6f2e9b641181c0f798b_1" modelIndex="85414027" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/fc-51-IR-Sensor.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="multimeter_straight-red-probe_1" modelIndex="85414028" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/multimeter_straight-red-probe_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Buzzer-v15" modelIndex="85414029" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Buzzer-v15.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="grove_infrared_receiver" modelIndex="85414030" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/seeed_grove_infrared_receiver.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Camdenboss_CTB0158-2_5_08mm_pitch_90deg_terminals" modelIndex="85414031" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Camdenboss_CTB0158-2_5_08mm_pitch_90deg_terminals.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Dagu_DGServo_9g_header_male" modelIndex="85414032" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Dagu DGServo 9g header (male).fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="mcp3008" modelIndex="85414033" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/mcp3008.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="grove_button" modelIndex="85414034" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/seeed_grove_button.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SIM800L_ffc8b43381ee538161803713ee68337c_5" modelIndex="85414035" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/SIM800L_5.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="teensy_3.1" modelIndex="85414036" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/teensy_3.1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53261-0619_smd-6p-h" modelIndex="85414037" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53261-0619_smd-6p-h_16.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="IRF520_mos_module_7115327c8b8b62b1ba195a98bd66e077_5" modelIndex="85414038" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/IFR520_MOS_module.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="AMT103_1" modelIndex="85414039" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/AMT103_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-4p-125v" modelIndex="85414040" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-4p-125v_8.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="VRM_1" modelIndex="85414041" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/VRM_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="grove_buzz" modelIndex="85414042" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/seeed_grove_buzz.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Teensy3.0" modelIndex="85414043" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Teensy 3.0.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="chipkit_MotorShield" modelIndex="85414044" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/chipkit_MotorShield.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-7p-125v" modelIndex="85414045" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-7p-125v_9.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="gersilex_6029df651d2c995e851e966fd50cdd47_2" modelIndex="85414046" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/HLK-PM12.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4001_4_x_2_input_NOR_gate_single" modelIndex="85414047" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/4001_4_x_2_input_NOR_gate_single.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="85414048" path=":/resources/parts/core/logotext.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53261-0219_smd-2p-h" modelIndex="85414049" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53261-0219_smd-2p-h_48.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="JST-B3P-VH" modelIndex="85414050" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/JST-B3P-VH.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-6p-125v" modelIndex="85414051" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-6p-125v_17.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4071_4_x_2_input_OR_gate_multipart" modelIndex="85414052" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/4071_4_x_2_input_OR_gate_multipart.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad Coincell-Battery-v17" modelIndex="85414053" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/LilyPad Coincell-Battery-v17.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="HiFive1-v3_9a5f35647dae280cf5accd34fb5f0916_3" modelIndex="85414054" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/HiFive1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Fairchild_MBR745" modelIndex="85414055" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Fairchild_MBR745.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Power Screwshield 1.0a" modelIndex="85414056" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Power Screwshield 1.0a.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="bareconductive_touchboard" modelIndex="85414057" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/bareconductive_touchboard.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-6p-125h" modelIndex="85414058" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-6p-125h_18.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Cherry-MX-Keyswitch" modelIndex="85414059" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Cherry-MX-Keyswitch.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4077_4_x_2_input_XNOR_gate_multipart" modelIndex="85414060" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/4077_4_x_2_input_XNOR_gate_multipart.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Dagu_DGServo_9g_Top_view" modelIndex="85414061" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Dagu DGServo 9g (Top view).fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53261-0319_smd-3p-h" modelIndex="85414062" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53261-0319_smd-3p-h_40.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SM130_fix" modelIndex="85414063" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/SM130_fix_c427b6f6464a187fb8ed11ae2f2868fc_2.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Lilypad_PowerSupply-v18" modelIndex="85414064" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Lilypad_PowerSupply-v18.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PC847X_7eb43b60a64029b53561d2a746e15e5e_1" modelIndex="85414065" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Sharp-PC847X.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="HLK-PM01_f3fff412ac55f21b5b3168355aacbaa9_1" modelIndex="85414066" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/HLK-PM01.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Dagu_DGServo_9g_End_view" modelIndex="85414067" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Dagu DGServo 9g (End view).fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_pH Circuit" modelIndex="85414068" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/atlas-sientific_pH Circuit.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-5p-125v" modelIndex="85414069" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-5p-125v_25.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="huzzah_esp8266" modelIndex="85414070" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/huzzah_esp8266.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="grove_4digit_display" modelIndex="85414071" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/seeed_grove_4digit_display.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_Serial Port Connector" modelIndex="85414072" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/atlas-sientific_Serial Port Connector.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4081_4_x_2_input_AND_gate_multipart" modelIndex="85414073" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/4081_4_x_2_input_AND_gate_multipart.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-2p-125v" modelIndex="85414074" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-2p-125v_50.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hx711_weightsensor" modelIndex="85414075" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hx711_weightsensor.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Copper0LogoTextModuleID" modelIndex="85414076" path=":/resources/parts/core/copper0logotext.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4070_4_x_2_input_XOR_gate_multipart" modelIndex="85414077" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/4070_4_x_2_input_XOR_gate_multipart.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Teensy3.0+pads" modelIndex="85414078" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Teensy 3.0+pads.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-8p-125v" modelIndex="85414079" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-8p-125v_5.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4060_e09d902e037fab8d3ef620cfedcb2d7d_1" modelIndex="85414080" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/4060.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Camdenboss_CTB0158-6_5_08mm_pitch_90deg_terminals" modelIndex="85414081" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Camdenboss_CTB0158-6_5_08mm_pitch_90deg_terminals.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="MPU6050_GY521_782354e339f672575bb20992ece4ab1b_9" modelIndex="85414082" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/InvenSense_MPU6050.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4f6dc41d6d2f66341ea506cdaf0e797e_2" modelIndex="85414083" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Textile Analog Pressure Sensor.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="raspberry-pi-4B_1" modelIndex="85414084" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/raspberry-pi-4B_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-2p-125h" modelIndex="85414085" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-2p-125h_42.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_ORP Circuit" modelIndex="85414086" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/atlas-sientific_ORP Circuit.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SCW05B05" modelIndex="85414087" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/SCW05B-05.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Displays-LCD-16X2-SILK" modelIndex="85414088" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/sparkfun-displays-lcd-16x2-silk.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Blend_Micro_1.0" modelIndex="85414089" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/blend_micro1.0.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-4p-125h" modelIndex="85414090" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-4p-125h_8.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Camdenboss_CTB0158-8_5_08mm_pitch_90deg_terminals" modelIndex="85414091" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Camdenboss_CTB0158-8_5_08mm_pitch_90deg_terminals.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53398-0271_smd-2p-v" modelIndex="85414092" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53398-0271_smd-2p-v_18.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4011_4_x_2_input_NAND_gate_multipart" modelIndex="85414093" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/4011_4_x_2_input_NAND_gate_multipart.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="144096d13637627703324c683e3211ec_40" modelIndex="85414094" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/OMRON_G5LE.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="d63bf67236bb974ced6c30c1d9f152a9_18" modelIndex="85414095" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/MPX2010 pressure sensor.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad-Accelerometer-v17" modelIndex="85414096" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/LilyPad-Accelerometer-v17.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="roborio_1" modelIndex="85414097" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/roborio_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="fa46ea3312d60697b8e907a5c75db23d_2" modelIndex="85414098" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Textile Stretch Sensor.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PC817_a466caa54dc5d95f2da2ae11f1fcef1b_3" modelIndex="85414099" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Sharp-PC817.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Copper1LogoTextModuleID" modelIndex="85414100" path=":/resources/parts/core/copper1logotext.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53398-0771_smd-7p-v" modelIndex="85414101" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53398-0771_smd-7p-v_8.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_RJ-11" modelIndex="85414102" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/atlas-sientific_RJ-11.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad Battery-Connect-v11" modelIndex="85414103" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/LilyPad Battery-Connect-v11.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-FKIT-SNAP_CONNECTOR--FEMALE" modelIndex="85414104" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/sparkfun-electromechanical-fkit-snap_connector--female.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="bmp180_breakout" modelIndex="85414105" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/bmp180_breakout.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad-Simple-v25" modelIndex="85414106" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/LilyPad-Simple-v25.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="AMPHENOL-ACJS-MHDR" modelIndex="85414107" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/AMPHENOL-ACJS-MHDR.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-3p-125h" modelIndex="85414108" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-3p-125h_34.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4077_4_x_2_input_XNOR_gate_single" modelIndex="85414109" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/4077_4_x_2_input_XNOR_gate_single.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="74xx08" modelIndex="85414110" path="/home/oa/.local/lib/fritzing/fritzing-parts/user/74xx08.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="raspberry_pi_3_rev-1.2_93cd6203faf853cc01c7e5d7831d3687_3" modelIndex="85414111" path="/home/oa/.local/lib/fritzing/fritzing-parts/obsolete/Raspberry Pi 3.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad-Button-v12" modelIndex="85414112" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/LilyPad-Button-v12.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="onoffshim_85f2f08e565750030faf26f30b4ef33c_1" modelIndex="85414113" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/onoffshim_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-FKIT-SNAP_CONNECTOR--MALE" modelIndex="85414114" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/sparkfun-electromechanical-fkit-snap_connector--male.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_Debugger" modelIndex="85414115" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/atlas-sientific_Debugger.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hc-sr0489a24442a28f4051a3a8757dd4825d87" modelIndex="85414116" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hc-sr04_bf8299a_002.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="DRV8825_breakout" modelIndex="85414117" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/DRV8825_breakout.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="grove_oled_128x96" modelIndex="85414118" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/seeed_grove_oled_128x96.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="multimeter_c_ac_1" modelIndex="85414119" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/multimeter_c_ac_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="multimeter_r_1" modelIndex="85414120" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/multimeter_r_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ab15a34dfcf83e23a26e83fe8a5a4dac_2" modelIndex="85414121" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Textile Potentiometer.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Camdenboss_CTB0158-4_5_08mm_pitch_90deg_terminals" modelIndex="85414122" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Camdenboss_CTB0158-4_5_08mm_pitch_90deg_terminals.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="diac_db3_d93f6c1a94ffd52562268be2e62b9775_9" modelIndex="85414123" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/diac_diode_db3.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_PWR-SNS" modelIndex="85414124" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/atlas-sientific_PWR-SNS.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4001_4_x_2_input_NOR_gate_multipart" modelIndex="85414125" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/4001_4_x_2_input_NOR_gate_multipart.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="hirose-df13-8p-125h" modelIndex="85414126" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/hirose-df13-8p-125h_4.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="xl4016_34b86ee4d060887cc6ea26a024730a87_1" modelIndex="85414127" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/XL4016_DC_DC_Converter.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Sony_Spresense_ext_board_1" modelIndex="85414128" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Sony_Spresense_ext_board_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_Pre-AssembledFemaleBNC" modelIndex="85414129" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/atlas-sientific_Pre-AssembledFemaleBNC.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad-slide-switch13" modelIndex="85414130" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/LilyPad-slide-switch13.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="chipkit_BasicIOShield" modelIndex="85414131" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/chipkit_BasicIOShield.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PHOTON_fix" modelIndex="85414132" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/PHOTON_fix.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4070_4_x_2_input_XOR_gate_single" modelIndex="85414133" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/4070_4_x_2_input_XOR_gate_single.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="PowerSupply-Lipo-v15" modelIndex="85414134" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/PowerSupply-Lipo-v15.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad_LED-v14" modelIndex="85414135" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/LilyPad_LED-v14.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="4071_4_x_2_input_OR_gate_single" modelIndex="85414136" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/4071_4_x_2_input_OR_gate_single.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Rotary_Switch_12x1_6ea97bf52c0dd3f7e91820cbb831579b_2" modelIndex="85414137" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Rotary_Switch_12x1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="raspberry_pi_3_rev-1.2" modelIndex="85414138" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Raspberry Pi 3.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Arduino Voice Shield-v16" modelIndex="85414139" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Arduino Voice Shield-v16.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Taiway-100-SP-X-T1-X-X-B1-M1_SPDT_miniature_toggle_switch_body" modelIndex="85414140" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Taiway-100-SP-X-T1-X-X-B1-M1_SPDT_miniature_toggle_switch_body.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="EspruinoPico" modelIndex="85414141" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/EspruinoPico_8fb644a5b6642112445ed6d90bc494d8_6.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="I2C_level_converter_444e27d4b4b231371fe2ccfc428902c1_1" modelIndex="85414142" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/I2C level shifter bidirectional.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ESP8266_7" modelIndex="85414143" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/ESP8266_7.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Camdenboss_CTB0158-10_5_08mm_pitch_90deg_terminals" modelIndex="85414144" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Camdenboss_CTB0158-10_5_08mm_pitch_90deg_terminals.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Camdenboss_CTB0158-9_5_08mm_pitch_90deg_terminals" modelIndex="85414145" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Camdenboss_CTB0158-9_5_08mm_pitch_90deg_terminals.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="ChirpSoilMoistureSensor_v2-7-3_5e0f232f847b53721953b7dbd6838518_9" modelIndex="85414146" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/ChirpSoilMoistureSensor_v2-7-3_5e0f232f847b53721953b7dbd6838518_9.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53398-0471_smd-4p-v" modelIndex="85414147" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53398-0471_smd-4p-v_16.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad-XBee-v15" modelIndex="85414148" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/LilyPad-XBee-v15.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Frode_3fbd71bd2aded84aad94c91d960efcc1_1" modelIndex="85414149" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Frode_1.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Sony_Spresense_1" modelIndex="85414150" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Sony_Spresense_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="electron_board" modelIndex="85414151" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/electron_board.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="96boards_CE_fixed" modelIndex="85414152" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/96boards_CE.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Molex-Picoblade-53261-0519_smd-5p-h" modelIndex="85414153" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/Molex-Picoblade-53261-0519_smd-5p-h_24.fzp" flippedSMD="true">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LilyPad SimplePower-v13" modelIndex="85414154" path="/home/oa/.local/lib/fritzing/fritzing-parts/core/LilyPad SimplePower-v13.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="2ChannelRelay_129217c8947f3fd792dd6483a1c71e2e_24" modelIndex="85414155" path="/home/oa/Documents/Fritzing/parts/user/2ChannelRelay_129217c8947f3fd792dd6483a1c71e2e_24.fzp">
+            <views/>
+        </instance>
+    </instances>
+</module>

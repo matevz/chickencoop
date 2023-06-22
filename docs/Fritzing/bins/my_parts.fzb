@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module fritzingVersion="0.9.6b.." icon="Mine.png">
+    <title>My Parts</title>
+    <instances>
+        <instance moduleIdRef="2ChannelRelay_129217c8947f3fd792dd6483a1c71e2e_24" modelIndex="85411410" path="/home/oa/Documents/Fritzing/parts/user/2ChannelRelay_129217c8947f3fd792dd6483a1c71e2e_24.fzp">
+            <views/>
+        </instance>
+    </instances>
+</module>

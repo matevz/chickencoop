@@ -2,17 +2,22 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Kure</title>
+		<title>Kurnik</title>
 	</head>
 	<body>
-		<div id="status">Vrata: {DOOR} Luč: {LIGHT} Temperatura: {T:0.2f}°C Vlažnost: {H:0.2f}% @{TIMESTAMP}</div>
-		<form method="POST">
-    		<p>Vrata: {DOOR}</p>
-		    <button type="submit" value="door_up">ODPRI</button>
-		    <button type="submit" value="door_down">ZAPRI</button>
-    		<p>IR luč: {LIGHT}</p>
-		    <button type="submit" value="light_on">ODPRI</button>
-		    <button type="submit" value="light_off">ZAPRI</button>
+		<div id="status">Temperatura: {T:0.2f}°C Vlažnost: {H:0.2f}% @<span id="clock">{TIMESTAMP}</span></div>
+		<form method="POST" action="/">
+    		<fieldset>
+    		    <legend>Vrata: {DOOR}</legend>
+                <button type="submit" name="action" value="door_up">ODPRI</button>
+                <button type="submit" name="action" value="door_down">ZAPRI</button>
+            </fieldset>
+    		<fieldset>
+    		    <legend>IR luč: {LIGHT}</legend>
+                <button type="submit" name="action" value="light_on">PRIŽGI</button>
+                <button type="submit" name="action" value="light_off">UGASNI</button>
+            </fieldset>
         </form>
+        <img src="stream.mjpg" />
 	</body>
 </html>

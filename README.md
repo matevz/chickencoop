@@ -1,6 +1,30 @@
 # Chicken Coop
 
-## Backend
+Chicken Coop python app running on Raspberry PI.
+
+Supports:
+
+- capturing temperature using DHT22
+- controlling actuator relay for opening/closing door
+- streaming mjpg video using official camera module
+- controlling IR illuminator relay for night vision
+- reading input button, if you want to open/close door manually on-site without
+  a smart phone
+- stores the current state into config file so the door remain in position
+  in case of power shortage
+
+The app is split in two parts:
+
+- the *backend* controls the GPIOs (relays, temperature readings, button)
+- the *frontend* serves a website and captures video from the camera
+
+## Scheme
+
+![Breadboard scheme](docs/scheme.png)
+
+## Installation
+
+### Backend
 
 Install dependencies:
 
@@ -16,7 +40,7 @@ cd backend
 python chickencoop_backend.py
 ```
 
-## Frontend
+### Frontend
 
 Run frontend with
 
@@ -25,7 +49,10 @@ cd backend
 python chickencoop_frontend.py
 ```
 
-## Systemd services
+Visit [http://your-raspberry-address:8080](http://your-raspberry-address:8080).
+
+
+### Systemd services
 
 You can register chickencoop to start when raspberry turns on. Put those in
 `/etc/systemd/system/chickencoop_{frontend,backend}` respectively.

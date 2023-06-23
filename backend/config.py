@@ -1,6 +1,7 @@
+from dataclasses import asdict, dataclass
+from datetime import datetime
 import json
 import os
-from dataclasses import dataclass
 from status import Status
 
 # DHT22 input.
@@ -18,7 +19,7 @@ LIGHT_SWITCH_PIN = 22
 # 5V input for opening/closing the door with button on site.
 MANUAL_DOOR_BUTTON_PIN = 5
 
-CFG_DIR="~/.config/chickencoop"
+CFG_DIR=os.path.expanduser("~/.config/chickencoop")
 CFG_NAME="cfg.json"
 
 @dataclass
@@ -39,9 +40,13 @@ def load_cfg() -> Config:
     path = os.path.join(CFG_DIR, CFG_NAME)
     if os.path.exists(path):
         f = open(path, "r")
-        json_obj = json.loads(f)
-        f.close()
-        return Config(**json_obj)
+        try:
+            json_obj = json.load(f)
+            f.close()
+            return Config(**json_obj)
+        except json.decoder.JSONDecodeError:
+            print("ERROR: failed to load config from file. Using default")
+            return default_cfg()
 
     return default_cfg()
 
@@ -51,13 +56,16 @@ def load_cfg_to_status() -> Status:
         door=cfg.door,
         light=cfg.light,
         master=cfg.master,
+        temperature=0,
+        humidity=0,
+        last_manual_door_datetime=datetime.now(),
     )
 
 
 def save_cfg_from_status(status: Status):
     save_cfg(Config(
         door=status.door,
-        status=status.light,
+        light=status.light,
         master=status.master,
     ))
 
@@ -68,5 +76,5 @@ def save_cfg(cfg: Config):
 
     path = os.path.join(CFG_DIR, CFG_NAME)
     f = open(path, "w")
-    f.write(json.dumps(cfg))
+    f.write(json.dumps(asdict(cfg)))
     f.close()

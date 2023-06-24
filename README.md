@@ -7,6 +7,7 @@ Supports:
 - capturing temperature using DHT22
 - controlling actuator relay for opening/closing door
 - streaming mjpg video using official camera module
+- streaming audio using USB sound card using external icecast+darkice services
 - controlling IR illuminator relay for night vision
 - reading input button, if you want to open/close door manually on-site without
   a smart phone

@@ -2,6 +2,7 @@
 
 from datetime import datetime
 from http.server import BaseHTTPRequestHandler,HTTPServer
+import logging
 import requests
 import socketserver
 import sys
@@ -48,7 +49,7 @@ class ChickenCoopHTTPHandler(BaseHTTPRequestHandler):
 					self.wfile.write(frame)
 					self.wfile.write(b'\r\n')
 			except Exception as e:
-				print("Warning: Removed streaming client {0}: {1}".format(self.client_address, str(e)))
+				logging.warning(f'removed streaming client {self.client_address}: {e}')
 		else:
 			self.send_response(200)
 			self.send_header("Content-type", "text/html")
@@ -58,7 +59,7 @@ class ChickenCoopHTTPHandler(BaseHTTPRequestHandler):
 
 			# sending get request and saving the response as response object
 			r = requests.get(url=status_url)
-			print(r.json())
+			logging.info('Got status: %s', r.json())
 			status = Status(**r.json())
 
 			timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -78,11 +79,9 @@ class ChickenCoopHTTPHandler(BaseHTTPRequestHandler):
 		content_length = int(self.headers['Content-Length'])
 		post_raw = self.rfile.read(content_length)
 		post = parse_qs(post_raw.decode(), strict_parsing=True)
-		print(post)
 		if "action" in post and len(post["action"])==1 and post["action"][0] in ["door_up", "door_down", "light_on", "light_off"]:
 			url = "http://{host}:{port}/{path}".format(host=BACKEND_HOSTNAME, port=BACKEND_PORT, path=post["action"][0])
-			r = requests.get(url)
-			print(r)
+			requests.get(url)
 
 		self.send_response(302)
 		self.send_header('Location', '/')
@@ -93,12 +92,13 @@ class StreamingServer(socketserver.ThreadingMixIn, HTTPServer):
 	daemon_threads = True
 
 
+logging.basicConfig(level=logging.DEBUG)
 init_camera()
 httpd = StreamingServer((HOSTNAME, PORT), ChickenCoopHTTPHandler)
-print("Chicken Coop Frontend listening on "+HOSTNAME+":"+str(PORT))
+logging.info(f'Chicken Coop Frontend listening on {HOSTNAME}:{PORT}. Connecting to Backend service on {BACKEND_HOSTNAME}:{BACKEND_PORT}')
 try:
 	httpd.serve_forever()
 except:
 	pass
 httpd.server_close()
-print("Server stopped - keyboard interrupt")
+logging.info('Server stopped - keyboard interrupt')

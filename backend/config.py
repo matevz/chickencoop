@@ -1,6 +1,7 @@
 from dataclasses import asdict, dataclass
 from datetime import datetime
 import json
+import logging
 import os
 from status import Status
 
@@ -45,7 +46,7 @@ def load_cfg() -> Config:
             f.close()
             return Config(**json_obj)
         except json.decoder.JSONDecodeError:
-            print("ERROR: failed to load config from file. Using default")
+            logging.error('failed to load config from file. Using default')
             return default_cfg()
 
     return default_cfg()

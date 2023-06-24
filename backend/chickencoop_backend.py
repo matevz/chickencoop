@@ -3,6 +3,7 @@
 import json
 import dataclasses
 from http.server import BaseHTTPRequestHandler, HTTPServer
+import logging
 import RPi.GPIO as GPIO
 
 from datetime import datetime
@@ -27,7 +28,7 @@ class ChickenCoopHTTPHandler(BaseHTTPRequestHandler):
 	def do_GET(s):
 		global status
 		s.send_response(200)
-		print(s.path)
+		logging.info(s.path)
 
 		# Backend returns JSON only.
 		s.send_header("Content-type", "application/json")
@@ -68,7 +69,7 @@ def init_gpio():
 def update_gpio():
 	global status
 
-	print("Updating GPIOs: {status}".format(status=status))
+	logging.info(f'Updating GPIOs: {status}')
 
 	GPIO.output(config.DOOR_SWITCH_PIN, status.door)
 	GPIO.output(config.LIGHT_SWITCH_PIN, status.light)
@@ -78,7 +79,7 @@ def update_gpio():
 def manual_door_button_callback(channel):
 	global status
 
-	print("Manual Door Button pressed")
+	logging.info('Manual Door Button pressed')
 	status.door = not status.door
 	config.save_cfg_from_status(status)
 	update_gpio()
@@ -86,6 +87,7 @@ def manual_door_button_callback(channel):
 
 
 if __name__ == '__main__':
+	logging.basicConfig(level=logging.DEBUG)
 	init_gpio()
 	manual_door.init_manual_door_button(manual_door_button_callback)
 	temperature.init_temperature_service()
@@ -94,7 +96,7 @@ if __name__ == '__main__':
 	update_gpio()
 
 	httpd = HTTPServer((HOSTNAME, PORT), ChickenCoopHTTPHandler)
-	print("Chicken Coop Backend listening on "+HOSTNAME+":"+str(PORT))
+	logging.info(f'Chicken Coop Backend listening on {HOSTNAME}:{PORT}')
 	try:
 		httpd.serve_forever()
 	except:
@@ -102,4 +104,4 @@ if __name__ == '__main__':
 	httpd.server_close()
 	temperature.stop_temperature_service()
 	GPIO.cleanup()
-	print("Server stopped - keyboard interrupt")
+	logging.info('Server stopped - keyboard interrupt')

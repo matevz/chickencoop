@@ -78,11 +78,11 @@ def update_gpio():
 def manual_door_button_callback(channel):
 	global status
 
-	if (datetime.now() - status.last_manual_door_datetime).seconds > 2:
-		status.door = not status.door
-		config.save_cfg_from_status(status)
-		update_gpio()
-		status.last_manual_door_datetime = datetime.now()
+	print("Manual Door Button pressed")
+	status.door = not status.door
+	config.save_cfg_from_status(status)
+	update_gpio()
+	status.last_manual_door_datetime = datetime.now()
 
 
 if __name__ == '__main__':

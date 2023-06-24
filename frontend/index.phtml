@@ -8,6 +8,9 @@
 		<div id="status">Temperatura: {T:0.2f}°C Vlažnost: {H:0.2f}% @<span id="clock">{TIMESTAMP}</span></div>
 		<form method="POST" action="/">
     		<fieldset>
+    		    <legend>Glavno stikalo: {MASTER}</legend>
+    		</fieldset>
+    		<fieldset>
     		    <legend>Vrata: {DOOR}</legend>
                 <button type="submit" name="action" value="door_up">ODPRI</button>
                 <button type="submit" name="action" value="door_down">ZAPRI</button>

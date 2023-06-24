@@ -17,7 +17,7 @@ DOOR_SWITCH_PIN = 27
 LIGHT_SWITCH_PIN = 22
 
 # 5V input for opening/closing the door with button on site.
-MANUAL_DOOR_BUTTON_PIN = 5
+MANUAL_DOOR_BUTTON_PIN = 16
 
 CFG_DIR=os.path.expanduser("~/.config/chickencoop")
 CFG_NAME="cfg.json"

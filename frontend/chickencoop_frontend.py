@@ -67,6 +67,7 @@ class ChickenCoopHTTPHandler(BaseHTTPRequestHandler):
 				T=status.temperature,
 				H=status.humidity,
 				TIMESTAMP=timestamp,
+				MASTER="Vklopljeno" if status.master==True else "Izklopljeno",
 				DOOR="Odprta" if status.door==True else "Zaprta",
 				LIGHT="Prižgana" if status.light==True else "Ugasnjena",
 				).encode()

@@ -6,7 +6,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import logging
 import RPi.GPIO as GPIO
 
-from datetime import datetime
+from datetime import datetime, timedelta
 import config
 from status import Status
 import manual_door
@@ -16,6 +16,7 @@ HOSTNAME = ''
 PORT = 1234
 
 status: Status
+last_manual_door_attempt = datetime.min
 
 
 class ChickenCoopHTTPHandler(BaseHTTPRequestHandler):
@@ -77,9 +78,15 @@ def update_gpio():
 
 
 def manual_door_button_callback(channel):
-	global status
+	global status, last_manual_door_attempt
 
-	logging.info('Manual Door Button pressed')
+	# Voltage glitch protection. Require 1-second button hold.
+	if last_manual_door_attempt < datetime.now()-timedelta(seconds=2):
+		logging.info('Manual Door Button pressed? Waiting for confirmation...')
+		last_manual_door_attempt = datetime.now()
+		return
+
+	logging.info('Manual Door Button press confirmed')
 	status.door = not status.door
 	config.save_cfg_from_status(status)
 	update_gpio()

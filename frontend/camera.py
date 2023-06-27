@@ -27,7 +27,7 @@ def init_camera():
     picam2 = Picamera2()
     picam2.configure(picam2.create_video_configuration(
         main={"size": (1920, 1080)},
-        transform=Transform(vflip=True, hflip=True), # Rotate 180 degrees.
+        transform=Transform(vflip=False, hflip=False), # No rotation.
         controls={"FrameDurationLimits": (1000000, 1000000), "AfMode": controls.AfModeEnum.Manual, "LensPosition": 0.0}
     ))
     picam2.start_recording(JpegEncoder(), FileOutput(output))

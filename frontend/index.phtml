@@ -5,23 +5,25 @@
 		<title>Kurnik</title>
 	</head>
 	<body>
-		<div id="status">Temperatura: {T:0.2f}°C Vlažnost: {H:0.2f}% @<span id="clock">{TIMESTAMP}</span></div>
-		<form method="POST" action="/">
+		<div id="status">Temperatura: <span id="t">?</span>°C Vlažnost: <span id="h">?</span>% @<span id="clock">?</span></div>
+		<form method="POST" target="hidden-form" action="/">
     		<fieldset>
-    		    <legend>Glavno stikalo: {MASTER}</legend>
+    		    <legend>Glavno stikalo: <span id="master">?</span></legend>
     		</fieldset>
     		<fieldset>
-    		    <legend>Vrata: {DOOR}</legend>
+    		    <legend>Vrata: <span id="door">?</span></legend>
                 <button type="submit" name="action" value="door_up">ODPRI</button>
                 <button type="submit" name="action" value="door_down">ZAPRI</button>
             </fieldset>
     		<fieldset>
-    		    <legend>IR luč: {LIGHT}</legend>
+    		    <legend>IR luč: <span id="light">?</span></legend>
                 <button type="submit" name="action" value="light_on">PRIŽGI</button>
                 <button type="submit" name="action" value="light_off">UGASNI</button>
             </fieldset>
         </form>
+        <iframe style="display:none" name="hidden-form"></iframe>
         <img src="stream.mjpg" style="width:100%; height:auto" />
         <audio autoplay><source src="/stream.mp3" type="audio/mpeg"/></audio>
+        <script>{SCRIPT}</script>
 	</body>
 </html>

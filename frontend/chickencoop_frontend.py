@@ -12,7 +12,6 @@ from camera import output, init_camera
 
 # Import backend
 sys.path.append('../backend')
-from status import Status
 
 HOSTNAME = ''
 PORT = 8080
@@ -21,6 +20,7 @@ BACKEND_HOSTNAME = 'localhost'
 BACKEND_PORT = 1234
 
 HTML_PATH_INDEX='./index.phtml'
+SCRIPT_PATH='./script.js'
 
 class ChickenCoopHTTPHandler(BaseHTTPRequestHandler):
 
@@ -50,29 +50,25 @@ class ChickenCoopHTTPHandler(BaseHTTPRequestHandler):
 					self.wfile.write(b'\r\n')
 			except Exception as e:
 				logging.warning(f'removed streaming client {self.client_address}: {e}')
+		if self.path == '/status':
+			self.send_response(200)
+			self.send_header("Content-type", "text/json")
+			self.end_headers()
+
+			status_url = "http://{host}:{port}/status".format(host=BACKEND_HOSTNAME, port=BACKEND_PORT)
+			r = requests.get(url=status_url)
+			self.wfile.write(r.content)
 		else:
 			self.send_response(200)
 			self.send_header("Content-type", "text/html")
 			self.end_headers()
 
-			status_url = "http://{host}:{port}/status".format(host=BACKEND_HOSTNAME, port=BACKEND_PORT)
+			sf = open(SCRIPT_PATH, 'r')
+			script = sf.read()
+			sf.close()
 
-			# sending get request and saving the response as response object
-			r = requests.get(url=status_url)
-			logging.info('Got status: %s', r.json())
-			status = Status(**r.json())
-
-			timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 			f = open(HTML_PATH_INDEX)
-			self.wfile.write(f.read().format(
-				T=status.temperature,
-				H=status.humidity,
-				TIMESTAMP=timestamp,
-				MASTER="Vklopljeno" if status.master==True else "Izklopljeno",
-				DOOR="Odprta" if status.door==True else "Zaprta",
-				LIGHT="Prižgana" if status.light==True else "Ugasnjena",
-				).encode()
-			)
+			self.wfile.write(f.read().format(SCRIPT=script).encode())
 			f.close()
 
 	def do_POST(self):

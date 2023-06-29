@@ -6,7 +6,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import logging
 import RPi.GPIO as GPIO
 
-from datetime import datetime, timedelta
+from datetime import datetime, timezone
 import config
 from status import Status
 import manual_door
@@ -38,6 +38,7 @@ class ChickenCoopHTTPHandler(BaseHTTPRequestHandler):
 			(avgH, avgT) = temperature.compute_avg_humid_temp()
 			status.humidity = avgH
 			status.temperature = avgT
+			status.current_datetime = datetime.now(timezone.utc)
 			s.wfile.write(json.dumps(dataclasses.asdict(status), default=str).encode())
 		elif s.path.startswith("/door_down"):
 			status.door = False
@@ -82,7 +83,7 @@ def switch_door():
 
 	logging.info('Switching door direction %d -> %d', status.door, not status.door)
 	status.door = not status.door
-	status.last_manual_door_datetime = datetime.now()
+	status.last_manual_door_datetime = datetime.now(timezone.utc)
 	config.save_cfg_from_status(status)
 	update_gpio()
 

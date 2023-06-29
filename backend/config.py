@@ -59,7 +59,8 @@ def load_cfg_to_status() -> Status:
         master=cfg.master,
         temperature=0,
         humidity=0,
-        last_manual_door_datetime=datetime.now(),
+        current_datetime=datetime.min,
+        last_manual_door_datetime=datetime.min,
     )
 
 

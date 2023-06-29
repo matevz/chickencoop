@@ -9,4 +9,5 @@ class Status:
     door: bool  # true: door up, false: door down
     light: bool
     master: bool
+    current_datetime: datetime
     last_manual_door_datetime: datetime

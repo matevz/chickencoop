@@ -7,34 +7,42 @@ from config import DHT22_PIN
 READ_TEMP = False
 SENSOR = None
 
-# sliding window (humidity, temperature) latest measures.
+# Sliding window (humidity, temperature) latest measures.
 sw = [(0,0)]*5
 
+# Main temperature thread.
+t: threading.Thread
+
+
 def init_temperature_service():
-    global READ_TEMP, SENSOR
+    global READ_TEMP, SENSOR, t
     READ_TEMP = True
     SENSOR = adafruit_dht.DHT22(DHT22_PIN)
 
     t = threading.Thread(target=read_temp_and_humidity)
     t.start()
 
+
 def stop_temperature_service():
-    global READ_TEMP, SENSOR
+    global READ_TEMP, SENSOR, t
     READ_TEMP = False  # stop the temperature thread
     SENSOR.exit()
+    t.join()
 
 
 def read_temp_and_humidity():
-    global READ_TEMP, sw
+    global READ_TEMP, SENSOR, sw
     while READ_TEMP:
         try:
             t, h = SENSOR.temperature, SENSOR.humidity
-            # atomic appending of new measure
+            # Thread-safe appending the new measurement.
             sw2 = sw[0:]
             sw2.append( (h,t) )
             sw = sw2[1:]
         except RuntimeError as error:
-            pass
+            SENSOR.exit()
+            time.sleep(2.0)
+            SENSOR = adafruit_dht.DHT22(DHT22_PIN)
         time.sleep(2.0)
 
 

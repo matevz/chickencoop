@@ -16,7 +16,6 @@ HOSTNAME = ''
 PORT = 1234
 
 status: Status
-last_manual_door_attempt = datetime.min
 
 
 class ChickenCoopHTTPHandler(BaseHTTPRequestHandler):
@@ -59,6 +58,7 @@ class ChickenCoopHTTPHandler(BaseHTTPRequestHandler):
 		else:
 			s.send_response(404)
 
+
 def init_gpio():
 	GPIO.cleanup()
 	GPIO.setmode(GPIO.BCM)
@@ -77,26 +77,20 @@ def update_gpio():
 	GPIO.output(config.MASTER_SWITCH_PIN, status.master)
 
 
-def manual_door_button_callback(channel):
-	global status, last_manual_door_attempt
+def switch_door():
+	global status
 
-	# Voltage glitch protection. Require 1-second button hold.
-	if last_manual_door_attempt < datetime.now()-timedelta(seconds=2):
-		logging.info('Manual Door Button pressed? Waiting for confirmation...')
-		last_manual_door_attempt = datetime.now()
-		return
-
-	logging.info('Manual Door Button press confirmed')
+	logging.info('Switching door direction %d -> %d', status.door, not status.door)
 	status.door = not status.door
+	status.last_manual_door_datetime = datetime.now()
 	config.save_cfg_from_status(status)
 	update_gpio()
-	status.last_manual_door_datetime = datetime.now()
 
 
 if __name__ == '__main__':
 	logging.basicConfig(level=logging.DEBUG)
 	init_gpio()
-	manual_door.init_manual_door_button(manual_door_button_callback)
+	manual_door.init_manual_door_service(switch_door)
 	temperature.init_temperature_service()
 
 	status = config.load_cfg_to_status()
@@ -110,5 +104,6 @@ if __name__ == '__main__':
 		pass
 	httpd.server_close()
 	temperature.stop_temperature_service()
+	manual_door.stop_manual_door_service()
 	GPIO.cleanup()
 	logging.info('Server stopped - keyboard interrupt')

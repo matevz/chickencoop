@@ -11,6 +11,7 @@ Supports:
 - controlling IR illuminator relay for night vision
 - reading input button, if you want to open/close door manually on-site without
   a smart phone
+- support for scheduled door opening and closing on sunrise and sunset
 - stores the current state into config file so the door remain in position
   in case of power shortage
 
@@ -31,7 +32,7 @@ Install dependencies:
 
 ```sh
 sudo apt install python3-libgpiod # also installs libgpiod2
-pip install adafruit-circuitpython-dht
+pip install adafruit-circuitpython-dht astral
 ```
 
 Run backend with

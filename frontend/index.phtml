@@ -12,13 +12,32 @@
     		</fieldset>
     		<fieldset>
     		    <legend>Vrata: <span id="door">?</span></legend>
-                <button type="submit" name="action" value="door_up">ODPRI</button>
-                <button type="submit" name="action" value="door_down">ZAPRI</button>
+                <button type="submit" name="action" value="door_open">ODPRI</button>
+                <button type="submit" name="action" value="door_close">ZAPRI</button>
             </fieldset>
     		<fieldset>
     		    <legend>IR luč: <span id="light">?</span></legend>
                 <button type="submit" name="action" value="light_on">PRIŽGI</button>
                 <button type="submit" name="action" value="light_off">UGASNI</button>
+            </fieldset>
+    		<fieldset>
+    		    <legend>Samodejno odpiranje in zapiranje vratc</legend>
+    		    <label for="schedule_city">Mesto:</label>
+                <input type="text" id="schedule_city" name="schedule_city"><br/>
+    		    <p>Sončni vzhod: <span id="schedule_sunrise">?</span></p>
+    		    <p>Sončni zahod: <span id="schedule_sunset">?</span></p>
+
+    		    <input type="checkbox" id="schedule_door_open" name="schedule_door_open" value="1"/>
+                <label for="schedule_door_open">Omogoči samodejno odpiranje vrat ob sončnem vzhodu</label><br/>
+                <label for="schedule_door_open_offset">Odmik odpiranja v minutah:</label>
+                <input type="number" id="schedule_door_open_offset" name="schedule_door_open_offset"/><br/>
+
+    		    <input type="checkbox" id="schedule_door_close" name="schedule_door_close" value="1">
+                <label for="schedule_door_close">Omogoči samodejno zapiranje vrat ob sončnem zahodu</label><br/>
+                <label for="schedule_door_close_offset">Odmik zapiranja v minutah:</label>
+                <input type="number" id="schedule_door_close_offset" name="schedule_door_close_offset"/><br/>
+
+                <button type="submit" name="action" value="apply_schedule">Uveljavi urnik</button>
             </fieldset>
         </form>
         <iframe style="display:none" name="hidden-form"></iframe>

@@ -71,17 +71,21 @@ class ChickenCoopHTTPHandler(BaseHTTPRequestHandler):
 			self.wfile.write(f.read().format(SCRIPT=script).encode())
 			f.close()
 
-	def do_POST(self):
-		content_length = int(self.headers['Content-Length'])
-		post_raw = self.rfile.read(content_length)
+	def do_POST(s):
+		content_length = int(s.headers['Content-Length'])
+		post_raw = s.rfile.read(content_length)
 		post = parse_qs(post_raw.decode(), strict_parsing=True)
-		if "action" in post and len(post["action"])==1 and post["action"][0] in ["door_up", "door_down", "light_on", "light_off"]:
-			url = "http://{host}:{port}/{path}".format(host=BACKEND_HOSTNAME, port=BACKEND_PORT, path=post["action"][0])
-			requests.get(url)
+		if "action" in post and len(post["action"])==1:
+			if post["action"][0] in ["door_open", "door_close", "light_on", "light_off"]:
+				url = "http://{host}:{port}/{path}".format(host=BACKEND_HOSTNAME, port=BACKEND_PORT, path=post["action"][0])
+				requests.get(url)
+			elif post["action"][0] in ["apply_schedule"]:
+				url = "http://{host}:{port}/{path}".format(host=BACKEND_HOSTNAME, port=BACKEND_PORT, path=post["action"][0])
+				requests.post(url, post)
 
-		self.send_response(302)
-		self.send_header('Location', '/')
-		self.end_headers()
+		s.send_response(200)
+		s.send_header("Content-type", "application/json")
+		s.end_headers()
 
 class StreamingServer(socketserver.ThreadingMixIn, HTTPServer):
 	allow_reuse_address = True

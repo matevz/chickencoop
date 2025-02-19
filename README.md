@@ -24,6 +24,10 @@ The app is split in two parts:
 
 ![Breadboard scheme](docs/scheme.png)
 
+## Mandatory screenshot
+
+![Screenshot](docs/screenshot.png)
+
 ## Installation
 
 ### Backend

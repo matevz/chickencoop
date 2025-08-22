@@ -63,7 +63,8 @@ def check_time(door_open_callback, door_close_callback):
 			city = astral.geocoder.lookup("London" if status.schedule_city == "" else status.schedule_city,
 										  astral.geocoder.database())
 		except KeyError:
-
+			logging.error(f"schedule: City '{status.schedule_city}' not found in astral database, falling back to London")
+			city = astral.geocoder.lookup("London", astral.geocoder.database())
 
 		sun = astral.sun.sun(city.observer)
 		status.schedule_sunrise = sun['sunrise']

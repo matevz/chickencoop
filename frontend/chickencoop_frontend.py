@@ -50,6 +50,21 @@ class ChickenCoopHTTPHandler(BaseHTTPRequestHandler):
 					self.wfile.write(b'\r\n')
 			except Exception as e:
 				logging.warning(f'removed streaming client {self.client_address}: {e}')
+		if self.path == '/webcam.jpg':
+			self.send_response(200)
+			self.send_header('Age', 0)
+			self.send_header('Cache-Control', 'no-cache, private')
+			self.send_header('Pragma', 'no-cache')
+			self.send_header('Content-Type', 'image/jpeg')
+			try:
+				with output.condition:
+					output.condition.wait()
+					frame = output.frame
+				self.send_header('Content-Length', len(frame))
+				self.end_headers()
+				self.wfile.write(frame)
+			except Exception as e:
+				logging.warning(f'removed jpg client {self.client_address}: {e}')
 		if self.path == '/status':
 			self.send_response(200)
 			self.send_header("Content-type", "text/json")

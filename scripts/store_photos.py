@@ -6,7 +6,7 @@ import os
 import sys
 import time
 from urllib.parse import urlparse
-from datetime import datetime
+from datetime import datetime, timezone
 
 # Minimum number of seconds between consecutive photos.
 CAPTURE_EVERY = 10
@@ -51,7 +51,7 @@ while True:
         s = parsed.netloc
 
         # Get current date and time
-        now = datetime.now()
+        now = datetime.now(timezone.utc)
         date_folder = now.strftime("%Y-%m-%d")
         time_filename = now.strftime("%H-%M-%S")
 
